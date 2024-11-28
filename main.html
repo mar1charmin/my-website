@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - My Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #6e48aa;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ddd;
+            transform: scale(1.1);
+        }
+
+        /* Header section */
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #9d50bb;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out 0.5s;
+        }
+
+        /* About section */
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .about h2 {
+            color: #6e48aa;
+            font-size: 2.2rem;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+        }
+
+        /* Profile image */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: rotate(10deg);
+        }
+
+        .profile p {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* CTA Button */
+        .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #6e48aa;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta:hover {
+            background: #9d50bb;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                font-size: 0.9rem;
+            }
+
+            .about h2 {
+                font-size: 1.8rem;
+            }
+
+            .about p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="HOMEPAGE.html">Home</a>
+        <a href="ABOUT PAGE.html">About Me</a>
+        <a href="PRODUCT PAGE.html">Product Page</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Mariane Teneza, a BMA student at FEU Tech.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <div class="profile">
+            <!-- Replace "image.png" with your image path -->
+            <img src="me pic.jpg" alt="Mariane Teneza">
+            <p>
+                Hello! I’m Mariane Teneza, a BMA student with expertise in Photography and Film. 
+                My passion lies in creating impactful designs, solving problems, and telling stories 
+                through my work. I’ve worked on Poli Prints, which was a company that sells light posters, 
+                and I’m always excited to take on new challenges!
+            </p>
+        </div>
+        <a class="cta" href="ABOUT PAGE.html">Learn More About Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mariane Teneza. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

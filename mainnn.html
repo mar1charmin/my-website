@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3e5f5, #e1bee7);
+            color: #333;
+        }
+
+        header {
+            background-color: #7b4e8b;
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            background-color: #9c7abf;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+            background-color: #6c3b8a;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            padding: 2rem;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #7b4e8b;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .product {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #f3e5f5;
+        }
+
+        .product h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #7b4e8b;
+            transition: color 0.3s;
+        }
+
+        .product:hover h2 {
+            color: #6c3b8a;
+        }
+
+        .product::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            z-index: -1;
+            border-radius: 12px;
+            transition: opacity 0.3s;
+        }
+
+        .product:hover::before {
+            opacity: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #7b4e8b;
+            color: white;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #9c7abf;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: #6c3b8a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HOMEPAGE.html">Home</a></li>
+                <li><a href="ABOUT PAGE.html">About</a></li>
+                <li><a href="PRODUCT PAGE.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My Work</h1>
+        <div class="gallery">
+            <a href="photography.html" class="product">
+                <h2>Photography</h2>
+            </a>
+            <a href="drawings.html" class="product">
+                <h2>Drawings</h2>
+            </a>
+            <a href="other-designs.html" class="product">
+                <h2>Other Designs</h2>
+            </a>
+        </div>
+        <!-- Updated button -->
+        <a href="CONTACT ME PAGE.html" class="button">Contact Me</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mariane Teneza</p>
+    </footer>
+</body>
+</html>

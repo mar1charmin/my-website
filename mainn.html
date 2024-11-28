@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e6e6fa, #d8c6e2);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #7b4e8b;
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: #b39ddb;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+            background-color: #9b79d3;
+        }
+
+        main {
+            padding: 3rem 1rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 800px;
+            animation: bounceIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #7b4e8b;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            animation: slideIn 1s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #7b4e8b;
+            color: white;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Cute and Interactive Button */
+        .button {
+            display: inline-block;
+            background-color: #a085c3;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: #9b79d3;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(155, 121, 211, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HOMEPAGE.html">Home</a></li>
+                <li><a href="ABOUT PAGE.html">About</a></li>
+                <li><a href="PRODUCT PAGE.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <p>I’m passionate about photography and films. I’ve worked at a company specializing in lighting posters, which helped me develop creative skills for unique visual designs.</p>
+        <a href="PRODUCT PAGE.html" class="button">Learn More About My Work</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mariane Teneza</p>
+    </footer>
+</body>
+</html>
